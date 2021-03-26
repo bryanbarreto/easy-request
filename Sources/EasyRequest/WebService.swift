@@ -9,6 +9,8 @@ import Foundation
 
 
 public final class WebService {
+    
+    public let shared = WebService()
 
     public func request<T: Codable>(resource: Resource<T>, success: @escaping (T) -> Void, failure: @escaping (RequestError) -> Void){
         self.makeCall(resource: resource) { (result) in
