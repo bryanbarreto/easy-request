@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  RequestError.swift
 //  
 //
 //  Created by Bryan Barreto Soares on 26/03/21.
