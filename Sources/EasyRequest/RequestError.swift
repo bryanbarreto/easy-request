@@ -8,9 +8,8 @@
 import Foundation
 
 
-public enum RequestError: Error {
-    case clientError
-    case serverError
-    case noData
-    case dataDecodingError
+public enum RequestError: String, Error {
+    case serverError = "Não foi possível se comunicar com servidor"
+    case noData = "A requisição não retornou nenhum dado"
+    case dataDecodingError = "Erro ao decodificiar dados recebidos do servidor"
 }
