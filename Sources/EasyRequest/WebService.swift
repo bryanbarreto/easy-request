@@ -9,10 +9,6 @@ import Foundation
 
 
 public class WebService {
-    
-    public static func addPercentingEncode(to string: String) -> String? {
-        return string.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
-    }
 
     public func request<T: Codable>(resource: Resource<T>, success: @escaping (T) -> Void, failure: @escaping (RequestError) -> Void){
         self.makeCall(resource: resource) { (result) in
