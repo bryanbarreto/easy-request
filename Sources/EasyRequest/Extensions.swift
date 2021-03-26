@@ -11,7 +11,7 @@ import Foundation
 // MARK: - URL extension
 public extension URL {
     static func withPercentEncoding(string: String) -> URL? {
-        let strWithPercentEncoding = string.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? ""
+        let strWithPercentEncoding = string.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
         return URL(string: strWithPercentEncoding)
     }
 }
